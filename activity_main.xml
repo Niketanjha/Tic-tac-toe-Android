@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baord"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="123dp"
+        android:layout_height="145dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="19dp"
+        android:onClick="dragfun"
+        android:tag="0" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="121dp"
+        android:layout_height="149dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:onClick="dragfun"
+        android:tag="1" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="123dp"
+        android:layout_height="145dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:onClick="dragfun"
+        android:tag="2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="124dp"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:onClick="dragfun"
+        android:tag="3" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="131dp"
+        android:layout_height="159dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/imageView2"
+        android:onClick="dragfun"
+        android:tag="4" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="123dp"
+        android:layout_height="155dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:onClick="dragfun"
+        android:tag="5" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="122dp"
+        android:layout_height="159dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginStart="0dp"
+        android:onClick="dragfun"
+        android:tag="6" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="127dp"
+        android:layout_height="164dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="dragfun"
+        android:tag="7" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="120dp"
+        android:layout_height="162dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="dragfun"
+        android:tag="8" />
+
+
+
+    <LinearLayout
+        android:id="@+id/playagainlayout"
+        android:layout_width="204dp"
+        android:layout_height="158dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_orange_light"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/winnermessage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="TextView"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/playagainbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="playagain"
+            android:text="Play Again?" />
+    </LinearLayout>
+
+
+</RelativeLayout>
